@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>17. Dons e Ministérios Espirituais — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">17</div>
+  <div class="detail-cat">Doutrina da Igreja</div>
+  <div class="detail-title">Dons e Ministérios Espirituais</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">Deus concede a todos os membros da Sua Igreja em cada época dons espirituais que cada membro deve empregar em amoroso ministério para o bem comum da Igreja e da humanidade. Dados pela ação do Espírito Santo, que os distribui a cada membro conforme a Sua vontade, os dons proveem todas as capacidades e ministérios de que a Igreja necessita para cumprir suas funções divinamente ordenadas.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 6:1-7</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Ora, naqueles dias, crescendo o número dos discípulos, houve uma murmuração dos helenistas contra os hebreus, porque as viúvas daqueles estavam sendo esquecidas na distribuição diária.   E os doze, convocando a multidão dos discípulos, disseram: Não é razoável que nós deixemos a palavra de Deus e sirvamos às mesas.   Escolhei, pois, irmãos, dentre vós, sete homens de boa reputação, cheios do Espírito Santo e de sabedoria, aos quais encarreguemos deste serviço.   Mas nós perseveraremos na oração e no ministério da palavra.   O parecer agradou a todos, e elegeram a Estevão, homem cheio de fé e do Espírito Santo, Filipe, Prócoro, Nicanor, Timão, Pármenas, e Nicolau, prosélito de Antioquia,   e os apresentaram perante os apóstolos; estes, tendo orado, lhes impuseram as mãos.   E divulgava-se a palavra de Deus, de sorte que se multiplicava muito o número dos discípulos em Jerusalém e muitos sacerdotes obedeciam à fé.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Romanos 12:4-8</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pois assim como em um corpo temos muitos membros, e nem todos os membros têm a mesma função,   assim nós, embora muitos, somos um só corpo em Cristo, e individualmente uns dos outros.   De modo que, tendo diferentes dons segundo a graça que nos foi dada, se é profecia, seja ela segundo a medida da fé;   se é ministério, seja em ministrar; se é ensinar, haja dedicação ao ensino;   ou que exorta, use esse dom em exortar; o que reparte, faça-o com liberalidade; o que preside, com zelo; o que usa de misericórdia, com alegria.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Coríntios 12:7-11,27,28</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">A cada um, porém, é dada a manifestação do Espírito para o proveito comum.   Porque a um, pelo Espírito, é dada a palavra da sabedoria; a outro, pelo mesmo Espírito, a palavra da ciência;   a outro, pelo mesmo Espírito, a fé; a outro, pelo mesmo Espírito, os dons de curar;   a outro a operação de milagres; a outro a profecia; a outro o dom de discernir espíritos; a outro a variedade de línguas; e a outro a interpretação de línguas.   Mas um só e o mesmo Espírito opera todas estas coisas, distribuindo particularmente a cada um como quer.   Ora, vós sois corpo de Cristo, e individualmente seus membros.   E a uns pôs Deus na igreja, primeiramente apóstolos, em segundo lugar profetas, em terceiro mestres, depois operadores de milagres, depois dons de curar, socorros, governos, variedades de línguas.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 4:8,11-16</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Por isso foi dito: Subindo ao alto, levou cativo o cativeiro, e deu dons aos homens.   E ele deu uns como apóstolos, e outros como profetas, e outros como evangelistas, e outros como pastores e mestres,   tendo em vista o aperfeiçoamento dos santos, para a obra do ministério, para edificação do corpo de Cristo;   até que todos cheguemos à unidade da fé e do pleno conhecimento do Filho de Deus, ao estado de homem feito, à medida da estatura da plenitude de Cristo;   para que não mais sejamos meninos, inconstantes, levados ao redor por todo vento de doutrina, pela fraudulência dos homens, pela astúcia tendente à maquinação do erro;   antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo,   do qual o corpo inteiro bem ajustado, e ligado pelo auxílio de todas as juntas, segundo a justa operação de cada parte, efetua o seu crescimento para edificação de si mesmo em amor.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Timóteo 3:1-13</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Fiel é esta palavra: Se alguém aspira ao episcopado, excelente obra deseja.   É necessário, pois, que o bispo seja irrepreensível, marido de uma só mulher, temperante, sóbrio, ordeiro, hospitaleiro, apto para ensinar;   não dado ao vinho, não espancador, mas moderado, inimigo de contendas, não ganancioso;   que governe bem a sua própria casa, tendo seus filhos em sujeição, com todo o respeito   (pois, se alguém não sabe governar a sua própria casa, como cuidará da igreja de Deus?);   não neófito, para que não se ensoberbeça e venha a cair na condenação do Diabo.   Também é necessário que tenha bom testemunho dos que estão de fora, para que não caia em opróbrio, e no laço do Diabo.   Da mesma forma os diáconos sejam sérios, não de língua dobre, não dados a muito vinho, não cobiçosos de torpe ganância,   guardando o mistério da fé numa consciência pura.   E também estes sejam primeiro provados, depois exercitem o diaconato, se forem irrepreensíveis.   Da mesma sorte as mulheres sejam sérias, não maldizentes, temperantes, e fiéis em tudo.   Os diáconos sejam maridos de uma só mulher, e governem bem a seus filhos e suas próprias casas.   Porque os que servirem bem como diáconos, adquirirão para si um lugar honroso e muita confiança na fé que há em Cristo Jesus.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Pedro 4:10,11</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">servindo uns aos outros conforme o dom que cada um recebeu, como bons despenseiros da multiforme graça de Deus.   Se alguém fala, fale como entregando oráculos de Deus; se alguém ministra, ministre segundo a força que Deus concede; para que em tudo Deus seja glorificado por meio de Jesus Cristo, ma quem pertencem a glória e o domínio para todo o sempre. Amém.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-16.html">← A Ceia do Senhor</a>
+  <a href="crenca-18.html">O Dom da Profecia →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

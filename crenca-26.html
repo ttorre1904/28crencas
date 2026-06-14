@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>26. A Morte e a Ressurreição — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">26</div>
+  <div class="detail-cat">Doutrina das Últimas Coisas</div>
+  <div class="detail-title">A Morte e a Ressurreição</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">O salário do pecado é a morte. Mas Deus, que somente é imortal, concederá a vida eterna aos Seus remidos. Até esse dia a morte é um estado inconsciente para todos. Quando Cristo, que é a nossa vida, aparecer, os justos ressuscitados e os justos vivos serão glorificados e arrebatados para encontrar-se com o Senhor. A segunda ressurreição, a ressurreição dos ímpios, ocorrerá mil anos depois.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Jó 19:25-27</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pois eu sei que o meu Redentor vive, e que por fim se levantará sobre a terra.   E depois de consumida esta minha pele, então fora da minha carne verei a Deus;   vê-lo-ei ao meu lado, e os meus olhos o contemplarão, e não mais como adversário. O meu coração desfalece dentro de mim!</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Salmos 146:3,4</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Não confieis em príncipes, nem em filho de homem, em quem não há auxílio.   Sai-lhe o espírito, e ele volta para a terra; naquele mesmo dia perecem os seus pensamentos.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Eclesiastes 9:5,6,10</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pois os vivos sabem que morrerão, mas os mortos não sabem coisa nenhuma, nem tampouco têm eles daí em diante recompensa; porque a sua memória ficou entregue ao esquecimento.   Tanto o seu amor como o seu ódio e a sua inveja já pereceram; nem têm eles daí em diante parte para sempre em coisa alguma do que se faz debaixo do sol.   Tudo quanto te vier à mão para fazer, faze-o conforme as tuas forças; porque no Seol, para onde tu vais, não há obra, nem projeto, nem conhecimento, nem sabedoria alguma.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Daniel 12:2,13</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E muitos dos que dormem no pó da terra ressuscitarão, uns para a vida eterna, e outros para vergonha e desprezo eterno.   Tu, porém, vai-te, até que chegue o fim; pois descansarás, e estarás no teu quinhão ao fim dos dias.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Isaías 25:8</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Aniquilará a morte para sempre, e assim enxugará o Senhor Deus as lágrimas de todos os rostos, e tirará de toda a terra o opróbrio do seu povo; porque o Senhor o disse.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 5:28,29</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Não vos admireis disso, porque vem a hora em que todos os que estão nos sepulcros ouvirão a sua voz e sairão:   os que tiverem feito o bem, para a ressurreição da vida, e os que tiverem praticado o mal, para a ressurreição do juízo.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 11:11-14</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E, tendo assim falado, acrescentou: Lázaro, o nosso amigo, dorme, mas vou despertá-lo do sono.   Disseram-lhe, pois, os discípulos: Senhor, se dorme, ficará bom.   Mas Jesus falara da sua morte; eles, porém, entenderam que falava do repouso do sono.   Então Jesus lhes disse claramente: Lázaro morreu;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Romanos 6:23</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Porque o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus nosso Senhor.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Coríntios 15:51-54</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Eis aqui vos digo um mistério: Nem todos dormiremos mas todos seremos transformados,   num momento, num abrir e fechar de olhos, ao som da última trombeta; porque a trombeta soará, e os mortos serão ressuscitados incorruptíveis, e nós seremos transformados.   Porque é necessário que isto que é corruptível se revista da incorruptibilidade e que isto que é mortal se revista da imortalidade.   Mas, quando isto que é corruptível se revestir da incorruptibilidade, e isto que é mortal se revestir da imortalidade, então se cumprirá a palavra que está escrito: Tragada foi a morte na vitória.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Colossenses 3:4</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Quando Cristo, que é a nossa vida, se manifestar, então também vós vos manifestareis com ele em glória.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Tessalonicenses 4:13-17</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Não queremos, porém, irmãos, que sejais ignorantes acerca dos que já dormem, para que não vos entristeçais como os outros que não têm esperança.   Porque, se cremos que Jesus morreu e ressurgiu, assim também aos que dormem, Deus, mediante Jesus, os tornará a trazer juntamente com ele.   Dizemo-vos, pois, isto pela palavra do Senhor: que nós, os que ficarmos vivos para a vinda do Senhor, de modo algum precederemos os que já dormem.   Porque o Senhor mesmo descerá do céu com grande brado, à voz do arcanjo, ao som da trombeta de Deus, e os que morreram em Cristo ressuscitarão primeiro.   Depois nós, os que ficarmos vivos seremos arrebatados juntamente com eles, nas nuvens, ao encontro do Senhor nos ares, e assim estaremos para sempre com o Senhor.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Timóteo 6:15</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">a qual, no tempo próprio, manifestará o bem-aventurado e único soberano, Rei dos reis e Senhor dos senhores;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Apocalipse 20:1-10</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E vi descer do céu um anjo, que tinha a chave do abismo e uma grande cadeia na sua mão.   Ele prendeu o dragão, a antiga serpente, que é o Diabo e Satanás, e o amarrou por mil anos.   Lançou-o no abismo, o qual fechou e selou sobre ele, para que não enganasse mais as nações até que os mil anos se completassem. Depois disto é necessário que ele seja solto por um pouco de tempo.   Então vi uns tronos; e aos que se assentaram sobre eles foi dado o poder de julgar; e vi as almas daqueles que foram degolados por causa do testemunho de Jesus e da palavra de Deus, e que não adoraram a besta nem a sua imagem, e não receberam o sinal na fronte nem nas mãos; e reviveram, e reinaram com Cristo durante mil anos.   Mas os outros mortos não reviveram, até que os mil anos se completassem. Esta é a primeira ressurreição.   Bem-aventurado e santo é aquele que tem parte na primeira ressurreição; sobre estes não tem poder a segunda morte; mas serão sacerdotes de Deus e de Cristo, e reinarão com ele durante os mil anos.   Ora, quando se completarem os mil anos, Satanás será solto da sua prisão,   e sairá a enganar as nações que estão nos quatro cantos da terra, Gogue e Magogue, cujo número é como a areia do mar, a fim de ajuntá-las para a batalha.   E subiram sobre a largura da terra, e cercaram o arraial dos santos e a cidade querida; mas desceu fogo do céu, e os devorou;   e o Diabo, que os enganava, foi lançado no lago de fogo e enxofre, onde estão a besta e o falso profeta; e de dia e de noite serão atormentados pelos séculos dos séculos.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-25.html">← A Segunda Vinda de Cristo</a>
+  <a href="crenca-27.html">O Milênio e o Fim do Pecado →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

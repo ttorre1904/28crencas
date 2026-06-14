@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>14. A Unidade no Corpo de Cristo — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">14</div>
+  <div class="detail-cat">Doutrina da Igreja</div>
+  <div class="detail-title">A Unidade no Corpo de Cristo</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">A Igreja é um só corpo com muitos membros, chamados de toda nação, tribo, língua e povo. Em Cristo somos uma nova criação; distinções de raça, cultura, instrução e nacionalidade, e diferenças entre alto e baixo, rico e pobre, homem e mulher, não devem ser divisivas entre nós. Somos todos iguais em Cristo, que por um Espírito nos uniu em uma só comunhão com Ele e uns com os outros; devemos servir e ser servidos sem parcialidade nem reserva.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Salmos 133:1</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Oh! quão bom e quão suave é que os irmãos vivam em união!</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Mateus 28:19,20</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Portanto ide, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo;   ensinando-os a observar todas as coisas que eu vos tenho mandado; e eis que eu estou convosco todos os dias, até a consumação dos séculos.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 17:20-23</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E rogo não somente por estes, mas também por aqueles que pela sua palavra hão de crer em mim;   para que todos sejam um; assim como tu, ó Pai, és em mim, e eu em ti, que também eles sejam um em nós; para que o mundo creia que tu me enviaste.   E eu lhes dei a glória que a mim me deste, para que sejam um, como nós somos um;   eu neles, e tu em mim, para que eles sejam perfeitos em unidade, a fim de que o mundo conheça que tu me enviaste, e que os amaste a eles, assim como me amaste a mim.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 17:26,27</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">e de um só fez todas as raças dos homens, para habitarem sobre toda a face da terra, determinando-lhes os tempos já dantes ordenados e os limites da sua habitação;   para que buscassem a Deus, se porventura, tateando, o pudessem achar, o qual, todavia, não está longe de cada um de nós;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Romanos 12:4,5</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pois assim como em um corpo temos muitos membros, e nem todos os membros têm a mesma função,   assim nós, embora muitos, somos um só corpo em Cristo, e individualmente uns dos outros.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Coríntios 12:12-14</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Porque, assim como o corpo é um, e tem muitos membros, e todos os membros do corpo, embora muitos, formam um só corpo, assim também é Cristo.   Pois em um só Espírito fomos todos nós batizados em um só corpo, quer judeus, quer gregos, quer escravos quer livres; e a todos nós foi dado beber de um só Espírito.   Porque também o corpo não é um membro, mas muitos.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Coríntios 5:16,17</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Por isso daqui por diante a ninguém conhecemos segundo a carne; e, ainda que tenhamos conhecido Cristo segundo a carne, contudo agora já não o conhecemos desse modo.   Pelo que, se alguém está em Cristo, nova criatura é; as coisas velhas já passaram; eis que tudo se fez novo.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Gálatas 3:27-29</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Porque todos quantos fostes batizados em Cristo vos revestistes de Cristo.   Não há judeu nem grego; não há escravo nem livre; não há homem nem mulher; porque todos vós sois um em Cristo Jesus.   E, se sois de Cristo, então sois descendência de Abraão, e herdeiros conforme a promessa.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 2:13-16</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Mas agora, em Cristo Jesus, vós, que antes estáveis longe, já pelo sangue de Cristo chegastes perto.   Porque ele é a nossa paz, o qual de ambos os povos fez um; e, derrubando a parede de separação que estava no meio, na sua carne desfez a inimizade,   isto é, a lei dos mandamentos contidos em ordenanças, para criar, em si mesmo, dos dois um novo homem, assim fazendo a paz,   e pela cruz reconciliar ambos com Deus em um só corpo, tendo por ela matado a inimizade;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 4:3-6,11-16</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">procurando diligentemente guardar a unidade do Espírito no vínculo da paz.   Há um só corpo e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação;   um só Senhor, uma só fé, um só batismo;   um só Deus e Pai de todos, o qual é sobre todos, e por todos e em todos.   E ele deu uns como apóstolos, e outros como profetas, e outros como evangelistas, e outros como pastores e mestres,   tendo em vista o aperfeiçoamento dos santos, para a obra do ministério, para edificação do corpo de Cristo;   até que todos cheguemos à unidade da fé e do pleno conhecimento do Filho de Deus, ao estado de homem feito, à medida da estatura da plenitude de Cristo;   para que não mais sejamos meninos, inconstantes, levados ao redor por todo vento de doutrina, pela fraudulência dos homens, pela astúcia tendente à maquinação do erro;   antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo,   do qual o corpo inteiro bem ajustado, e ligado pelo auxílio de todas as juntas, segundo a justa operação de cada parte, efetua o seu crescimento para edificação de si mesmo em amor.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Colossenses 3:10-15</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">e vos vestistes do novo, que se renova para o pleno conhecimento, segundo a imagem daquele que o criou;   onde não há grego nem judeu, circuncisão nem incircuncisão, bárbaro, cita, escravo ou livre, mas Cristo é tudo em todos.   Revestí-vos, pois, como eleitos de Deus, santos e amados, de coração compassivo, de benignidade, humildade, mansidão, longanimidade,   suportando-vos e perdoando-vos uns aos outros, se alguém tiver queixa contra outro; assim como o Senhor vos perdoou, assim fazei vós também.   E, sobre tudo isto, revestí-vos do amor, que é o vínculo da perfeição.   E a paz de Cristo, para a qual também fostes chamados em um corpo, domine em vossos corações; e sede agradecidos.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-13.html">← O Remanescente e a Sua Missão</a>
+  <a href="crenca-15.html">O Batismo →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

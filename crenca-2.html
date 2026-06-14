@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2. A Trindade — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">2</div>
+  <div class="detail-cat">Doutrina de Deus</div>
+  <div class="detail-title">A Trindade</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">Há um só Deus: Pai, Filho e Espírito Santo, uma unidade de três Pessoas coeternas. Deus é imortal, todo-poderoso, onisciente, acima de tudo e sempre presente. Ele é infinito e está além da compreensão humana, mas é conhecido por meio da Sua autorrevelação. Deus, que é amor, é para sempre digno de adoração, louvor e serviço por toda a criação.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Gênesis 1:26</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E disse Deus: Façamos o homem à nossa imagem, conforme a nossa semelhança; domine ele sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, e sobre toda a terra, e sobre todo réptil que se arrasta sobre a terra.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Deuteronômio 6:4</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Ouve, ó Israel; o Senhor nosso Deus é o único Senhor.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Isaías 6:8</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Depois disto ouvi a voz do Senhor, que dizia: A quem enviarei, e quem irá por nós? Então disse eu: Eis-me aqui, envia-me a mim.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Mateus 28:19</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Portanto ide, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 3:16</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Coríntios 1:21,22</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Mas aquele que nos confirma convosco em Cristo, e nos ungiu, é Deus,   o qual também nos selou e nos deu como penhor o Espírito em nossos corações.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Coríntios 13:14</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Texto não disponível.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 4:4-6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Há um só corpo e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação;   um só Senhor, uma só fé, um só batismo;   um só Deus e Pai de todos, o qual é sobre todos, e por todos e em todos.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Pedro 1:2</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">eleitos segundo a presciência de Deus Pai, na santificação do Espírito, para a obediência e aspersão do sangue de Jesus Cristo: Graça e paz vos sejam multiplicadas.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-1.html">← As Sagradas Escrituras</a>
+  <a href="crenca-3.html">O Pai →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

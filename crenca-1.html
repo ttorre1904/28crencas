@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1. As Sagradas Escrituras — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">1</div>
+  <div class="detail-cat">Doutrina da Palavra</div>
+  <div class="detail-title">As Sagradas Escrituras</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">As Sagradas Escrituras, o Velho e o Novo Testamentos, são a Palavra escrita de Deus, dadas por inspiração divina. Os autores inspirados falaram e escreveram quando movidos pelo Espírito Santo. Nesta Palavra, Deus confiou ao homem o conhecimento necessário para a salvação. As Sagradas Escrituras são a revelação suprema, autorizada e infalível da Sua vontade. São o padrão de caráter, o teste da experiência, o revelador definitivo das doutrinas, e o registro fidedigno dos atos de Deus na história.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Salmos 119:105</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Provérbios 30:5,6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Toda palavra de Deus é pura; ele é um escudo para os que nele confiam.   Nada acrescentes às suas palavras, para que ele não te repreenda e tu sejas achado mentiroso.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Isaías 8:20</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">A Lei e ao Testemunho! se eles não falarem segundo esta palavra, nunca lhes raiará a alva.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 17:17</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Santifica-os na verdade, a tua palavra é a verdade.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Tessalonicenses 2:13</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Por isso nós também, sem cessar, damos graças a Deus, porquanto vós, havendo recebido a palavra de Deus que de nós ouvistes, a recebestes, não como palavra de homens, mas (segundo ela é na verdade) como palavra de Deus, a qual também opera em vós que credes.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Timóteo 3:16,17</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Toda Escritura é divinamente inspirada e proveitosa para ensinar, para repreender, para corrigir, para instruir em justiça;   para que o homem de Deus seja perfeito, e perfeitamente preparado para toda boa obra.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Hebreus 4:12</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Porque a palavra de Deus é viva e eficaz, e mais cortante do que qualquer espada de dois gumes, e penetra até a divisão de alma e espírito, e de juntas e medulas, e é apta para discernir os pensamentos e intenções do coração.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Pedro 1:20,21</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">sabendo primeiramente isto: que nenhuma profecia da Escritura é de particular interpretação.   Porque a profecia nunca foi produzida por vontade dos homens, mas os homens da parte de Deus falaram movidos pelo Espírito Santo.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="index.html">← Todas as crenças</a>
+  <a href="crenca-2.html">A Trindade →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

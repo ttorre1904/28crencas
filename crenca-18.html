@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>18. O Dom da Profecia — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">18</div>
+  <div class="detail-cat">Doutrina da Igreja</div>
+  <div class="detail-title">O Dom da Profecia</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">As Escrituras testificam que um dos dons do Espírito Santo é a profecia. Este dom é uma marca identificadora da Igreja remanescente e cremos que foi manifestado no ministério de Ellen G. White. Seus escritos falam com autoridade profética e oferecem conforto, orientação, instrução e correção à Igreja. Também deixam claro que a Bíblia é o padrão pelo qual todo ensinamento e experiência deve ser testado.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Números 12:6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Então disse: Ouvi agora as minhas palavras: se entre vós houver profeta, eu, o Senhor, a ele me farei conhecer em visão, em sonhos falarei com ele.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Crônicas 20:20</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pela manhã cedo se levantaram saíram ao deserto de Tecoa; ao saírem, Jeosafá pôs-se em pé e disse: Ouvi-me, ó Judá, e vós, moradores de Jerusalém. Crede no Senhor vosso Deus, e estareis seguros; crede nos seus profetas, e sereis bem sucedidos.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Amós 3:7</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Certamente o Senhor Deus não fará coisa alguma, sem ter revelado o seu segredo aos seus servos, os profetas.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Joel 2:28,29</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos terão sonhos, os vossos mancebos terão visões;   e também sobre os servos e sobre as servas naqueles dias derramarei o meu Espírito.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 2:14-21</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Então Pedro, pondo-se em pé com os onze, levantou a voz e disse-lhes: Varões judeus e todos os que habitais em Jerusalém, seja- vos isto notório, e escutai as minhas palavras.   Pois estes homens não estão embriagados, como vós pensais, visto que é apenas a terceira hora do dia.   Mas isto é o que foi dito pelo profeta Joel:   E acontecerá nos últimos dias, diz o Senhor, que derramarei do meu Espírito sobre toda a carne; e os vossos filhos e as vossas filhas profetizarão, os vossos mancebos terão visões, os vossos anciãos terão sonhos;   e sobre os meus servos e sobre as minhas servas derramarei do meu Espírito naqueles dias, e eles profetizarão.   E mostrarei prodígios em cima no céu; e sinais embaixo na terra, sangue, fogo e vapor de fumaça.   O sol se converterá em trevas, e a lua em sangue, antes que venha o grande e glorioso dia do Senhor.   e acontecerá que todo aquele que invocar o nome do Senhor será salvo.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Timóteo 3:16,17</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Toda Escritura é divinamente inspirada e proveitosa para ensinar, para repreender, para corrigir, para instruir em justiça;   para que o homem de Deus seja perfeito, e perfeitamente preparado para toda boa obra.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Hebreus 1:1-3</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Havendo Deus antigamente falado muitas vezes, e de muitas maneiras, aos pais, pelos profetas,   nestes últimos dias a nós nos falou pelo Filho, a quem constituiu herdeiro de todas as coisas, e por quem fez também o mundo;   sendo ele o resplendor da sua glória e a expressa imagem do seu Ser, e sustentando todas as coisas pela palavra do seu poder, havendo ele mesmo feito a purificação dos pecados, assentou-se à direita da Majestade nas alturas,</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Apocalipse 12:17</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E o dragão irou-se contra a mulher, e foi fazer guerra aos demais filhos dela, os que guardam os mandamentos de Deus, e mantêm o testemunho de Jesus.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Apocalipse 19:10</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Então me lancei a seus pés para adorá-lo, mas ele me disse: Olha, não faças tal: sou conservo teu e de teus irmãos, que têm o testemunho de Jesus; adora a Deus; pois o testemunho de Jesus é o espírito da profecia.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Apocalipse 22:8,9</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Eu, João, sou o que ouvi e vi estas coisas. E quando as ouvi e vi, prostrei-me aos pés do anjo que mas mostrava, para o adorar.   Mas ele me disse: Olha, não faças tal; porque eu sou conservo teu e de teus irmãos, os profetas, e dos que guardam as palavras deste livro. Adora a Deus.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-17.html">← Dons e Ministérios Espirituais</a>
+  <a href="crenca-19.html">A Lei de Deus →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>6. A Criação — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">6</div>
+  <div class="detail-cat">Doutrina da Criação</div>
+  <div class="detail-title">A Criação</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">Deus revelou nas Escrituras o relato autêntico e histórico da Sua atividade criadora. Ele criou o universo e, em uma recente criação de seis dias, o Senhor fez 'os Céus e a Terra, o mar e tudo o que neles há' e descansou no sétimo dia. Assim Ele estabeleceu o Sábado como um memorial perpétuo da obra que realizou e completou durante seis dias literais que, juntamente com o Sábado, constituíram a mesma unidade de tempo que hoje chamamos de semana. O primeiro homem e a primeira mulher foram feitos à imagem de Deus como obra suprema da Criação, receberam domínio sobre o mundo e foram encarregados com responsabilidade de cuidar dele. Quando o mundo foi concluído, era 'muito bom', declarando a glória de Deus.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Gênesis 1-2</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Texto não disponível.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Êxodo 20:8-11</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Lembra-te do dia do sábado, para o santificar.   Seis dias trabalharás, e farás todo o teu trabalho;   mas o sétimo dia é o sábado do Senhor teu Deus. Nesse dia não farás trabalho algum, nem tu, nem teu filho, nem tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o estrangeiro que está dentro das tuas portas.   Porque em seis dias fez o Senhor o céu e a terra, o mar e tudo o que neles há, e ao sétimo dia descansou; por isso o Senhor abençoou o dia do sábado, e o santificou.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Salmos 19:1-6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Os céus proclamam a glória de Deus e o firmamento anuncia a obra das suas mãos.   Um dia faz declaração a outro dia, e uma noite revela conhecimento a outra noite.   Não há fala, nem palavras; não se lhes ouve a voz.   Por toda a terra estende-se a sua linha, e as suas palavras até os consfins do mundo. Neles pôs uma tenda para o sol,   que é qual noivo que sai do seu tálamo, e se alegra, como um herói, a correr a sua carreira.   A sua saída é desde uma extremidade dos céus, e o seu curso até a outra extremidade deles; e nada se esconde ao seu calor.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Salmos 33:6,9</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pela palavra do Senhor foram feitos os céus, e todo o exército deles pelo sopro da sua boca.   Pois ele falou, e tudo se fez; ele mandou, e logo tudo apareceu.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Isaías 45:12,18</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Eu é que fiz a terra, e nela criei o homem; as minhas mãos estenderam os céus, e a todo o seu exército dei as minhas ordens.   Porque assim diz o Senhor, que criou os céus, o Deus que formou a terra, que a fez e a estabeleceu, não a criando para ser um caos, mas para ser habitada: Eu sou o Senhor e não há outro.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 17:24</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">O Deus que fez o mundo e tudo o que nele há, sendo ele Senhor do céu e da terra, não habita em templos feitos por mãos de homens;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Colossenses 1:16</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">porque nele foram criadas todas as coisas nos céus e na terra, as visíveis e as invisíveis, sejam tronos, sejam dominações, sejam principados, sejam potestades; tudo foi criado por ele e para ele.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Hebreus 1:2</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">nestes últimos dias a nós nos falou pelo Filho, a quem constituiu herdeiro de todas as coisas, e por quem fez também o mundo;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Hebreus 11:3</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pela fé entendemos que os mundos foram criados pela palavra de Deus; de modo que o visível não foi feito daquilo que se vê.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Apocalipse 10:6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">e jurou por aquele que vive pelos séculos dos séculos, o qual criou o céu e o que nele há, e a terra e o que nela há, e o mar e o que nele há, que não haveria mais demora,</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Apocalipse 14:7</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">dizendo com grande voz: Temei a Deus, e dai-lhe glória; porque é chegada a hora do seu juízo; e adorai aquele que fez o céu, e a terra, e o mar, e as fontes das águas.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-5.html">← O Espírito Santo</a>
+  <a href="crenca-7.html">A Natureza do Homem →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

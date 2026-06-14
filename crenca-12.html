@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>12. A Igreja — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">12</div>
+  <div class="detail-cat">Doutrina da Igreja</div>
+  <div class="detail-title">A Igreja</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">A Igreja é a comunidade de crentes que confessam Jesus Cristo como Senhor e Salvador. Em continuidade com o povo de Deus nos tempos do Velho Testamento, somos chamados para fora do mundo; e nos unimos para adoração, comunhão, instrução na Palavra, celebração da Ceia do Senhor, serviço à humanidade e proclamação mundial do evangelho. A Igreja deriva a sua autoridade de Cristo, que é a Palavra encarnada revelada nas Escrituras. A Igreja é a família de Deus; adotada por Ele como filhos, seus membros vivem com base no novo pacto. A Igreja é o corpo de Cristo, uma comunidade de fé da qual o próprio Cristo é a Cabeça.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Gênesis 12:1-3</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela, e da casa de teu pai, para a terra que eu te mostrarei.   Eu farei de ti uma grande nação; abençoar-te-ei, e engrandecerei o teu nome; e tu, sê uma bênção.   Abençoarei aos que te abençoarem, e amaldiçoarei àquele que te amaldiçoar; e em ti serão benditas todas as famílias da terra.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Êxodo 19:3-7</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Então subiu Moisés a Deus, e do monte o Senhor o chamou, dizendo: Assim falarás à casa de Jacó, e anunciarás aos filhos de Israel:   Vós tendes visto o que fiz: aos egípcios, como vos levei sobre asas de águias, e vos trouxe a mim.   Agora, pois, se atentamente ouvirdes a minha voz e guardardes o meu pacto, então sereis a minha possessão peculiar dentre todos os povos, porque minha é toda a terra;   e vós sereis para mim reino sacerdotal e nação santa. São estas as palavras que falarás aos filhos de Israel.   Veio, pois, Moisés e, tendo convocado os anciãos do povo, expôs diante deles todas estas palavras, que o Senhor lhe tinha ordenado.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Mateus 16:13-20</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Tendo Jesus chegado às regiões de Cesaréia de Felipe, interrogou os seus discípulos, dizendo: Quem dizem os homens ser o Filho do homem?   Responderam eles: Uns dizem que é João, o Batista; outros, Elias; outros, Jeremias, ou algum dos profetas.   Mas vós, perguntou-lhes Jesus, quem dizeis que eu sou?   Respondeu-lhe Simão Pedro: Tu és o Cristo, o Filho do Deus vivo.   Disse-lhe Jesus: Bem-aventurado és tu, Simão Barjonas, porque não foi carne e sangue que to revelou, mas meu Pai, que está nos céus.   Pois também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do hades não prevalecerão contra ela;   dar-te-ei as chaves do reino dos céus; o que ligares, pois, na terra será ligado nos céus, e o que desligares na terra será desligado nos céus.   Então ordenou aos discípulos que a ninguém dissessem que ele era o Cristo.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Mateus 28:19,20</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Portanto ide, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo;   ensinando-os a observar todas as coisas que eu vos tenho mandado; e eis que eu estou convosco todos os dias, até a consumação dos séculos.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 2:38-42</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Pedro então lhes respondeu: Arrependei-vos, e cada um de vós seja batizado em nome de Jesus Cristo, para remissão de vossos pecados; e recebereis o dom do Espírito Santo.   Porque a promessa vos pertence a vós, a vossos filhos, e a todos os que estão longe: a quantos o Senhor nosso Deus chamar.   E com muitas outras palavras dava testemunho, e os exortava, dizendo: salvai-vos desta geração perversa.   De sorte que foram batizados os que receberam a sua palavra; e naquele dia agregaram-se quase três mil almas;   e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Coríntios 1:2</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">à igreja de Deus que está em Corinto, aos santificados em Cristo Jesus, chamados para serem santos, com todos os que em todo lugar invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso:</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 1:22,23</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">e sujeitou todas as coisas debaixo dos seus pés, e para ser cabeça sobre todas as coisas o deu à igreja,   que é o seu corpo, o complemento daquele que cumpre tudo em todas as coisas.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 2:19-22</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Assim, pois, não sois mais estrangeiros, nem forasteiros, antes sois concidadãos dos santos e membros da família de Deus,   edificados sobre o fundamento dos apóstolos e dos profetas, sendo o próprio Cristo Jesus a principal pedra da esquina;   no qual todo o edifício bem ajustado cresce para templo santo no Senhor,   no qual também vós juntamente sois edificados para morada de Deus no Espírito.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 5:23-27</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">porque o marido é a cabeça da mulher, como também Cristo é a cabeça da igreja, sendo ele próprio o Salvador do corpo.   Mas, assim como a igreja está sujeita a Cristo, assim também as mulheres o sejam em tudo a seus maridos.   Vós, maridos, amai a vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela,   a fim de a santificar, tendo-a purificado com a lavagem da água, pela palavra,   para apresentá-la a si mesmo igreja gloriosa, sem mácula, nem ruga, nem qualquer coisa semelhante, mas santa e irrepreensível.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Colossenses 1:17,18</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Ele é antes de todas as coisas, e nele subsistem todas as coisas;   também ele é a cabeça do corpo, da igreja; é o princípio, o primogênito dentre os mortos, para que em tudo tenha a preeminência,</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Pedro 2:9</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo adquirido, para que anuncieis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-11.html">← Crescer em Cristo</a>
+  <a href="crenca-13.html">O Remanescente e a Sua Missão →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

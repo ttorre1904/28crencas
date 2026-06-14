@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5. O Espírito Santo — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">5</div>
+  <div class="detail-cat">Doutrina de Deus</div>
+  <div class="detail-title">O Espírito Santo</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">Deus, o eterno Espírito, esteve ativo com o Pai e o Filho na Criação, encarnação e redenção. É tanto uma Pessoa como o Pai e o Filho. Ele inspirou os escritores das Escrituras. Encheu de poder a vida de Cristo. Ele atrai e convence os seres humanos; e os que respondem, Ele renova e transforma à imagem de Deus. Enviado pelo Pai e pelo Filho para estar sempre com os Seus filhos, Ele concede dons espirituais à Igreja, a capacita a testificar de Cristo e, em harmonia com as Escrituras, a conduz a toda a verdade.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Gênesis 1:1,2</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">No princípio criou Deus os céus e a terra.   A terra era sem forma e vazia; e havia trevas sobre a face do abismo, mas o Espírito de Deus pairava sobre a face das águas.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Samuel 23:2</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">O Espírito do Senhor fala por mim, e a sua palavra está na minha língua.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Salmos 51:11</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Não me lances fora da tua presença, e não retire de mim o teu santo Espírito.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Isaías 61:1</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">O Espírito do Senhor Deus está sobre mim, porque o Senhor me ungiu para pregar boas-novas aos mansos; enviou-me a restaurar os contritos de coração, a proclamar liberdade aos cativos, e a abertura de prisão aos presos;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Lucas 1:35</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Respondeu-lhe o anjo: Virá sobre ti o Espírito Santo, e o poder do Altíssimo te cobrirá com a sua sombra; por isso o que há de nascer será chamado santo, Filho de Deus.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Lucas 4:18</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">O Espírito do Senhor está sobre mim, porquanto me ungiu para anunciar boas novas aos pobres; enviou-me para proclamar libertação aos cativos, e restauração da vista aos cegos, para pôr em liberdade os oprimidos,</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 14:16-18,26</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">E eu rogarei ao Pai, e ele vos dará outro Ajudador, para que fique convosco para sempre.   a saber, o Espírito da verdade, o qual o mundo não pode receber; porque não o vê nem o conhece; mas vós o conheceis, porque ele habita convosco, e estará em vós.   Não vos deixarei órfãos; voltarei a vós.   Mas o Ajudador, o Espírito Santo a quem o Pai enviará em meu nome, esse vos ensinará todas as coisas, e vos fará lembrar de tudo quanto eu vos tenho dito.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 15:26</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Quando vier o Ajudador, que eu vos enviarei da parte do Pai, o Espírito da verdade, que do Pai procede, esse dará testemunho de mim;</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">João 16:7-13</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Todavia, digo-vos a verdade, convém-vos que eu vá; pois se eu não for, o Ajudador não virá a vós; mas, se eu for, vo-lo enviarei.   E quando ele vier, convencerá o mundo do pecado, da justiça e do juízo:   do pecado, porque não crêem em mim;   da justiça, porque vou para meu Pai, e não me vereis mais,   e do juízo, porque o príncipe deste mundo já está julgado.   Ainda tenho muito que vos dizer; mas vós não o podeis suportar agora.   Quando vier, porém, aquele, o Espírito da verdade, ele vos guiará a toda a verdade; porque não falará por si mesmo, mas dirá o que tiver ouvido, e vos anunciará as coisas vindouras.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 1:8</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Mas recebereis poder, ao descer sobre vós o Espírito Santo, e ser-me-eis testemunhas, tanto em Jerusalém, como em toda a Judéia e Samária, e até os confins da terra.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Atos 5:3</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Disse então Pedro: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno?</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Romanos 5:5</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">e a esperança não desaponta, porquanto o amor de Deus está derramado em nossos corações pelo Espírito Santo que nos foi dado.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Coríntios 12:7-11</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">A cada um, porém, é dada a manifestação do Espírito para o proveito comum.   Porque a um, pelo Espírito, é dada a palavra da sabedoria; a outro, pelo mesmo Espírito, a palavra da ciência;   a outro, pelo mesmo Espírito, a fé; a outro, pelo mesmo Espírito, os dons de curar;   a outro a operação de milagres; a outro a profecia; a outro o dom de discernir espíritos; a outro a variedade de línguas; e a outro a interpretação de línguas.   Mas um só e o mesmo Espírito opera todas estas coisas, distribuindo particularmente a cada um como quer.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Pedro 1:21</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Porque a profecia nunca foi produzida por vontade dos homens, mas os homens da parte de Deus falaram movidos pelo Espírito Santo.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-4.html">← O Filho</a>
+  <a href="crenca-6.html">A Criação →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>

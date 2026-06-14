@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>23. O Casamento e a Família — 28 Crenças</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-background-primary,#fff);color:var(--color-text-primary,#1a1a1a)}
+.app{max-width:420px;margin:0 auto;min-height:100vh}
+.header{padding:2rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.header-num{font-family:Georgia,serif;font-size:5rem;font-weight:500;color:#8B1A1A;line-height:1;letter-spacing:-2px;opacity:0.15;position:absolute;right:1rem;top:0.5rem}
+.header-wrap{position:relative;overflow:hidden}
+.header-eyebrow{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.4rem}
+.header-title{font-family:Georgia,serif;font-size:1.7rem;font-weight:500;line-height:1.2;color:var(--color-text-primary,#1a1a1a)}
+.header-title em{color:#8B1A1A;font-style:italic}
+.header-sub{font-size:13px;color:var(--color-text-secondary,#555);margin-top:0.5rem;line-height:1.5}
+.list{padding:0.5rem 0}
+.belief-item{display:flex;align-items:center;gap:12px;padding:0.85rem 1.25rem;cursor:pointer;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);transition:background 0.15s;text-decoration:none;color:inherit}
+.belief-item:hover{background:var(--color-background-secondary,#f5f5f5)}
+.belief-num{font-family:Georgia,serif;font-size:1rem;font-weight:500;color:#8B1A1A;min-width:28px;text-align:right;font-style:italic}
+.belief-name{font-size:15px;font-weight:400;color:var(--color-text-primary,#1a1a1a);flex:1}
+.belief-arrow{color:var(--color-text-tertiary,#888);font-size:14px}
+.detail-header{padding:1.5rem 1.25rem 1rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);position:relative}
+.back-btn{display:flex;align-items:center;gap:6px;font-size:13px;color:#8B1A1A;text-decoration:none;margin-bottom:1rem}
+.detail-num{font-family:Georgia,serif;font-size:4rem;font-weight:500;color:#8B1A1A;opacity:0.12;position:absolute;right:1rem;top:0.5rem;line-height:1;letter-spacing:-2px}
+.detail-cat{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.35rem}
+.detail-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:500;font-style:italic;color:var(--color-text-primary,#1a1a1a)}
+.detail-body{padding:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.detail-text{font-size:15px;line-height:1.75;color:var(--color-text-primary,#1a1a1a)}
+.verses-section{padding:1.25rem}
+.verses-title{font-size:11px;letter-spacing:0.12em;color:var(--color-text-tertiary,#888);text-transform:uppercase;margin-bottom:0.75rem}
+.verse-item{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:8px;margin-bottom:0.5rem;overflow:hidden}
+.verse-toggle{display:flex;align-items:center;justify-content:space-between;padding:0.65rem 0.9rem;cursor:pointer;background:none;border:none;width:100%;text-align:left}
+.verse-ref{font-size:14px;font-weight:500;color:#8B1A1A}
+.verse-icon{color:var(--color-text-tertiary,#888);transition:transform 0.2s;font-size:14px}
+.verse-icon.open{transform:rotate(180deg)}
+.verse-content{display:none;padding:0.75rem 0.9rem;font-size:13px;line-height:1.65;color:var(--color-text-secondary,#555);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.verse-content.open{display:block}
+.divider-line{width:40px;height:2px;background:#8B1A1A;margin:0.5rem 0 0.75rem}
+.nav-links{display:flex;justify-content:space-between;padding:1.25rem;border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);font-size:13px}
+.nav-links a{color:#8B1A1A;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-links .nav-placeholder{color:transparent;pointer-events:none}
+</style>
+
+</head>
+<body>
+<div class="app">
+
+<div class="detail-header">
+  <a class="back-btn" href="index.html">← Todas as crenças</a>
+  <div class="detail-num">23</div>
+  <div class="detail-cat">Doutrina da Vida Cristã</div>
+  <div class="detail-title">O Casamento e a Família</div>
+  <div class="divider-line"></div>
+</div>
+<div class="detail-body">
+  <p class="detail-text">O casamento foi divinamente estabelecido no Éden e afirmado por Jesus como uma união permanente entre um homem e uma mulher em amorosa companhia. Para o cristão, o compromisso matrimonial é feito com Deus tanto quanto com o cônjuge, e deve ser estabelecido apenas entre um homem e uma mulher que compartilhem uma fé comum. Amor mútuo, honra, respeito e responsabilidade são a base desse relacionamento, que deve refletir o amor, a santidade, a proximidade e a permanência do relacionamento entre Cristo e a Sua Igreja.</p>
+</div>
+<div class="verses-section">
+  <div class="verses-title">Textos bíblicos de apoio</div>
+  
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Gênesis 2:18-25</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Disse mais o Senhor Deus: Não é bom que o homem esteja só; far-lhe-ei uma ajudadora que lhe seja idônea.   Da terra formou, pois, o Senhor Deus todos os animais o campo e todas as aves do céu, e os trouxe ao homem, para ver como lhes chamaria; e tudo o que o homem chamou a todo ser vivente, isso foi o seu nome.   Assim o homem deu nomes a todos os animais domésticos, às aves do céu e a todos os animais do campo; mas para o homem não se achava ajudadora idônea.   Então o Senhor Deus fez cair um sono pesado sobre o homem, e este adormeceu; tomou-lhe, então, uma das costelas, e fechou a carne em seu lugar;   e da costela que o senhor Deus lhe tomara, formou a mulher e a trouxe ao homem.   Então disse o homem: Esta é agora osso dos meus ossos, e carne da minha carne; ela será chamada varoa, porquanto do varão foi tomada.   Portanto deixará o homem a seu pai e a sua mãe, e unir-se-á à sua mulher, e serão uma só carne.   E ambos estavam nus, o homem e sua mulher; e não se envergonhavam.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Êxodo 20:12</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Honra a teu pai e a tua mãe, para que se prolonguem os teus dias na terra que o Senhor teu Deus te dá.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Deuteronômio 6:5-9</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Amarás, pois, ao Senhor teu Deus de todo o teu coração, de toda a tua alma e de todas as tuas forças.   E estas palavras, que hoje te ordeno, estarão no teu coração;   e as ensinarás a teus filhos, e delas falarás sentado em tua casa e andando pelo caminho, ao deitar-te e ao levantar-te.   Também as atarás por sinal na tua mão e te serão por frontais entre os teus olhos;   e as escreverás nos umbrais de tua casa, e nas tuas portas.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Provérbios 22:6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Instrui o menino no caminho em que deve andar, e até quando envelhecer não se desviará dele.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Malaquias 4:5,6</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Eis que eu vos enviarei o profeta Elias, antes que venha o grande e terrível dia do Senhor;   e ele converterá o coração dos pais aos filhos, e o coração dos filhos a seus pais; para que eu não venha, e fira a terra com maldição.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Mateus 5:31,32</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Também foi dito: Quem repudiar sua mulher, dê-lhe carta de divórcio.   Eu, porém, vos digo que todo aquele que repudia sua mulher, a não ser por causa de infidelidade, a faz adúltera; e quem casar com a repudiada, comete adultério.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Mateus 19:3-9,12</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Aproximaram-se dele alguns fariseus que o experimentavam, dizendo: É lícito ao homem repudiar sua mulher por qualquer motivo?   Respondeu-lhe Jesus: Não tendes lido que o Criador os fez desde o princípio homem e mulher,   e que ordenou: Por isso deixará o homem pai e mãe, e unir-se-á a sua mulher; e serão os dois uma só carne?   Assim já não são mais dois, mas um só carne. Portanto o que Deus ajuntou, não o separe o homem.   Responderam-lhe: Então por que mandou Moisés dar-lhe carta de divórcio e repudiá-la?   Disse-lhes ele: Pela dureza de vossos corações Moisés vos permitiu repudiar vossas mulheres; mas não foi assim desde o princípio.   Eu vos digo porém, que qualquer que repudiar sua mulher, a não ser por causa de infidelidade, e casar com outra, comete adultério; [e o que casar com a repudiada também comete adultério.]   Porque há eunucos que nasceram assim; e há eunucos que pelos homens foram feitos tais; e outros há que a si mesmos se fizeram eunucos por causa do reino dos céus. Quem pode aceitar isso, aceite-o.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">1 Coríntios 7:7,10,11</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Contudo queria que todos os homens fossem como eu mesmo; mas cada um tem de Deus o seu próprio dom, um deste modo, e outro daquele.   Todavia, aos casados, mando, não eu mas o Senhor, que a mulher não se aparte do marido;   se, porém, se apartar, que fique sem casar, ou se reconcilie com o marido; e que o marido não deixe a mulher.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">2 Coríntios 6:14</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Não vos prendais a um jugo desigual com os incrédulos; pois que sociedade tem a justiça com a injustiça? ou que comunhão tem a luz com as trevas?</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 5:21-33</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">sujeitando-vos uns aos outros no temor de Cristo.   Vós, mulheres, submetei-vos a vossos maridos, como ao Senhor;   porque o marido é a cabeça da mulher, como também Cristo é a cabeça da igreja, sendo ele próprio o Salvador do corpo.   Mas, assim como a igreja está sujeita a Cristo, assim também as mulheres o sejam em tudo a seus maridos.   Vós, maridos, amai a vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela,   a fim de a santificar, tendo-a purificado com a lavagem da água, pela palavra,   para apresentá-la a si mesmo igreja gloriosa, sem mácula, nem ruga, nem qualquer coisa semelhante, mas santa e irrepreensível.   Assim devem os maridos amar a suas próprias mulheres, como a seus próprios corpos. Quem ama a sua mulher, ama-se a si mesmo.   Pois nunca ninguém aborreceu a sua própria carne, antes a nutre e preza, como também Cristo à igreja;   porque somos membros do seu corpo.   Por isso deixará o homem a seu pai e a sua mãe, e se unirá à sua mulher, e serão os dois uma só carne.   Grande é este mistério, mas eu falo em referência a Cristo e à igreja.   Todavia também vós, cada um de per si, assim ame a sua própria mulher como a si mesmo, e a mulher reverencie a seu marido.</div>
+    </div>
+    <div class="verse-item">
+      <button class="verse-toggle" onclick="toggleVerse(this)" aria-expanded="false">
+        <span class="verse-ref">Efésios 6:1-4</span>
+        <span class="verse-icon">▾</span>
+      </button>
+      <div class="verse-content">Vós, filhos, sede obedientes a vossos pais no Senhor, porque isto é justo.   Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa),   para que te vá bem, e sejas de longa vida sobre a terra.   E vós, pais, não provoqueis à ira vossos filhos, mas criai-os na disciplina e admoestação do Senhor.</div>
+    </div>
+</div>
+<div class="nav-links">
+  <a href="crenca-22.html">← O Comportamento Cristão</a>
+  <a href="crenca-24.html">O Ministério de Cristo no Santuário Celestial →</a>
+</div>
+</div>
+<script>
+function toggleVerse(btn) {
+  const icon = btn.querySelector('.verse-icon');
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  content.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+</body>
+</html>
